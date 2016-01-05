@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var app = express();
 app.use(bodyParser.json());
 
-app.get ('/api/posts', function(req,res){
+app.get ('https://api.flickr.com/services/feeds/photos_public.gne?tags=potato&tagmode=all&format=json', function(req,res){
   res.json([
     {
       posttitle: "Post 1",
